@@ -1,0 +1,243 @@
+.header__mobile{
+    display: none;
+}
+@media(max-width: 1039px){
+    .page__main{
+        position: relative;
+    }
+    .main__container{
+        justify-content: left;
+    }
+    .main__content{
+        z-index: 5;
+    }
+    .main__bg{
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+
+    .launch__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .clients__holder{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width: 880px){
+    .companies__container{
+        padding-top: 70px;
+        row-gap: 35px;
+        justify-content: center
+    }
+
+    .footer__top{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .clients__container{
+        padding-bottom: 0;
+    }
+}
+@media(max-width: 860px){
+    .main__bg{
+        opacity: 0.4;
+        filter: blur(1px);
+    }
+}
+@media(max-width: 765px) {
+    .pipelines{
+        background-position: bottom center;
+    }
+    .pipelines__container{
+        margin-top: 70px;
+        padding-top: 50px;
+        padding-bottom: 450px;
+    }
+}
+@media(max-width: 670px){
+    .header__nav{
+        display: none;
+    }
+    .header__mobile{
+        position: relative;
+        position: static;
+        display: flex;
+        z-index: 999;
+    }
+    .mobile__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        width: 320px;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .mobile__nav-list {
+        padding-top: 70px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        background-color: #F7F1FF;
+        border-radius: 4% 0 0 4%;
+    }
+    .jackdaw-mobile {
+        margin-left: 20px;
+        padding-right: 20px;
+        background-image: url(../img/header/jackdaw.svg);
+        background-repeat: no-repeat;
+        background-position: 53px 5px;
+    }
+    .header__btn-link {
+        padding: 12px 60px;
+        font-size: 16px;
+    }
+
+    /*--MAIN-----------------*/
+    .main__container{
+        justify-content: center;
+    }
+    .main__content{
+        padding-top: 70px;
+        padding-bottom: 150px;
+        width: 580px;
+    }
+    .main__buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .btn{
+        padding: 12px 80px;
+    }
+
+    .steps__container{
+        padding-top: 70px;
+    }
+    .launch__container{
+        padding-top: 70px;
+    }
+
+    .pipelines__container{
+        padding-bottom: 370px;
+    }
+}
+@media(max-width: 550px){
+    .btn{
+        padding: 12px 60px;
+    }
+    .pipelines{
+
+    }
+    .pipelines__container{
+        padding-top: 50px;
+        padding-bottom: 250px;
+    }
+}
+@media(max-width: 500px){
+    .companies__form{
+        max-width: 370px;
+    }
+    .companies__form-bg{
+        max-width: 428px;
+    }
+    .companies__title{
+        font-size: 26px;
+    }
+}
+@media(max-width: 470px){
+    .main__content{
+        padding-bottom: 100px;
+    }
+    .main__title{
+        font-size: 38px;
+    }
+    .main__relesed{
+        padding: 12px 60px;
+    }
+    .main__buttons{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        justify-content: center;
+    }
+    .main__button-start{
+        margin: 0;
+    }
+    .btn{
+        padding: 16px 150px;
+    }
+    .launch__title{
+        font-size: 28px;
+    }
+    .launch__description{
+        font-size: 14px;
+    }
+}
+@media(max-width: 445px){
+    .companies__form{
+        max-width: 330px;
+        justify-content: center;
+    }
+    .companies__form-bg{
+        max-width: 378px;
+    }
+    .form{
+        width: 300px;
+    }
+    .trusted{
+        text-align: center;
+        margin-left: 125px;
+    }
+    .trusted::before, .trusted::after{
+        width: 70px;
+    }
+    .trusted::before{
+        left: -89px;
+    }
+}
+@media(max-width: 425px){
+    .main__title{
+        font-size: 30px;
+    }
+    .main__description{
+        font-size: 14px;
+    }
+    .main__relesed{
+        font-size: 12px;
+        padding: 12px 10px;
+    }
+    .btn{
+        padding: 16px 90px;
+    }
+    .launch__title{
+        font-size: 22px;
+    }
+    .clients__container{
+        padding-top: 100px;
+    }
+}
+@media(max-width: 393px){
+    .companies__form{
+        max-width: 310px;
+        justify-content: center;
+    }
+    .companies__form-bg{
+        max-width: 348px;
+    }
+    .form{
+        width: 270px;
+    }
+    .pipelines__container{
+        padding-bottom: 220px;
+    }
+}
